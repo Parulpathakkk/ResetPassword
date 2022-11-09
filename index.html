@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="box">
+
+        <nav>
+          <h2>LOGO</h2>
+        </nav>
+          <ul>
+            <li><a href="">Join a race</a></li>
+            <li><a href="">LeaderBoard</a></li>
+            <li><button id="btn">Log in</button</li>
+            
+          </ul>
+        </div>
+        <div id="container2">
+        <h1 id="heading">Password Reset</h1>
+        <p id="para"></p>
+        <button  id="btn2" style="display: none; 
+  " >Join a Race</button>
+        <form action="" onsubmit="return myfun()">
+          <!-- <span  id="msg3"></span><br><br> -->
+        <label class="hide" for="">New Password:</label><br>
+        <input class="hide" type="password" name="" id="password1"><br>
+        <span id="msg1"></span><br><br>
+        <label class="hide"   for="">Re-Enter New Password:</label><br>
+        <input class="hide"  type="password" name="" id="password2"><br>
+        <span id="msg2"></span><br><br>
+      
+        <input  class="hide" type="submit" value="Reset Password" name="" id="sub">
+      
+      
+      </form>
+    </div>
+      <!-- </div> -->
+        <!-- <img src="./images/Back drop 1.png" alt=""> -->
+        <footer>
+          <div id="footer">
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Tutorials</a></li>
+              <li><a href="">Terms of Services</a></li>
+              <!-- <li><button id="btn">Log in</button</li> -->
+              
+            </ul>
+          </div>
+        </footer>
+      <!-- </div> -->
+  
+  
+  
+      <script>
+           function myfun(){ 
+        var a = document.getElementById("password1").value
+        var b = document.getElementById("password2").value
+        var charaters=/^[a-zA-Z]*$/;
+        if(a=="")
+        {
+          document.getElementById("msg1").innerHTML="**Please Fill Password**"
+          return false;
+        }
+        if(!a.match(charaters))
+        {
+          document.getElementById("msg1").innerHTML="**Password must only contain characters from alphabets"
+          return false;
+        }
+        if(a.length<8){
+          document.getElementById("msg1").innerHTML="**Password length must be greater than 8"
+          return false;
+        }
+        if(a!=b){
+          document.getElementById("msg2").innerHTML="**Passwords do not match**"
+          return false;
+        }
+        if(a==b){
+  
+  document.getElementById("heading").innerHTML="Password Changed"
+  var box=document.getElementsByClassName("hide")
+  for(let i=0;i<box.length;i++){
+    box[i].style.display="none"
+  }
+  
+   document.getElementById("para").innerHTML="Your password has been updated! Now get back in the driver seat,racers are waiting for you!"
+  var button2=document.getElementById("btn2")
+  button2.style.display="block"
+  
+  return false;
+        }
+      }
+  
+      
+      </script>
+</body>
+</html>

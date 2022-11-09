@@ -1,0 +1,160 @@
+#container2{
+    margin-top: 80px;
+    margin-bottom: 190px;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  body{
+    margin: auto;
+    background-image: url(./images/Back\ drop\ 1.png);
+    background-repeat: no-repeat;
+
+    height: 100%;
+    width: 100%;
+  }
+  #box {
+
+
+    overflow: auto;
+    background-color: rgb(17, 130, 168);
+    
+  }
+  #box nav{
+    float: left;
+    /* margin:-4px; */
+    font-size: medium;
+    padding-left: 14px;
+    
+  }
+  #box li {
+    float: left;
+
+    margin: 2px;
+    margin-right: 15px;
+
+    border-radius: 4px;
+
+  }
+  #box a {
+    text-decoration: none;
+    color:black;
+    padding: 7px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  #box ul {
+    list-style-type: none;
+    float: right;
+  
+  }
+  li #btn{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    /* margin: 2px; */
+    /* padding: 8px; */
+    font-weight: bold;
+    font-size: large;
+  }
+  img{
+    /* width: auto
+    ; */
+    width: 100%;
+    
+  }
+  form{
+    text-align: center;
+    /* align-items: center; */
+  }
+  #heading{
+    /* color: red; */
+    text-align: center;
+    /* font-size: larger; */
+    font-weight: bolder;
+    font-style:normal
+  }
+ 
+   #container{
+    margin: auto;
+    padding: 0%;
+    height: auto;
+    width: auto;
+   }
+   footer{
+    text-align: center;
+    align-items: center;
+   margin-top: -155px;
+    background-color: rgb(17, 130, 168);
+    overflow: auto;
+    padding: 5px;
+    font-size: larger;
+    
+   }
+   #footer li {
+    padding: 6px;
+    float: left;
+
+    margin: 6px;
+    
+
+    border-radius: 4px;
+
+  }
+  #footer a {
+    text-decoration: none;
+    color:black;
+    padding: 7px;
+    font-size: large;
+    font-weight: bold;
+  }
+  #footer ul {
+    list-style-type: none;
+    margin: 10px;
+    
+  
+  }
+  form label{
+    padding-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    
+  }
+  input{
+    padding: 5px;
+    margin: 10PX;
+    width: 30vh;
+
+  }
+  #sub{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: large;
+  }
+  p{
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    font-size: large;
+    font-weight: 600;
+    /* width: 30%; */
+  }
+  #btn2{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px 40px;
+    margin-top: 40px;
+    width: 30%;
+    font-size: large;
+
+  }
+  span{
+    color: red;
+    font-weight: 600;
+    font-size: small;
+  }
